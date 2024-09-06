@@ -25,19 +25,28 @@ VD.createUntil(4) ;create until we have at least 4 VD
 return
 
 ;#useful stuff
-!1::VD.goToDesktopNum(1)
-!2::VD.goToDesktopNum(2)
-!3::VD.goToDesktopNum(3)
-!4::VD.goToDesktopNum(4)
+#1::VD.goToDesktopNum(1)
+#2::VD.goToDesktopNum(2)
+#3::VD.goToDesktopNum(3)
+#4::VD.goToDesktopNum(4)
+#5::Return
+#6::Return
+#7::Return
+#8::Return
+#9::Return
 
 ;follow your window
-!+1::VD.MoveWindowToDesktopNum("A",1), VD.goToDesktopNum(1)
-!+2::VD.MoveWindowToDesktopNum("A",2), VD.goToDesktopNum(2)
-!+3::VD.MoveWindowToDesktopNum("A",3), VD.goToDesktopNum(3)
-!+4::VD.MoveWindowToDesktopNum("A",4), VD.goToDesktopNum(4)
+#+1::VD.MoveWindowToDesktopNum("A",1), VD.goToDesktopNum(1)
+#+2::VD.MoveWindowToDesktopNum("A",2), VD.goToDesktopNum(2)
+#+3::VD.MoveWindowToDesktopNum("A",3), VD.goToDesktopNum(3)
+#+4::VD.MoveWindowToDesktopNum("A",4), VD.goToDesktopNum(4)
+#+5::Return
+#+6::Return
+#+7::Return
+#+8::Return
+#+9::Return
 
 ; wrapping / cycle back to first desktop when at the last
 ^+#left::VD.goToRelativeDesktopNum(-1)
 ^+#right::VD.goToRelativeDesktopNum(+1)
 
-f3::Exitapp
